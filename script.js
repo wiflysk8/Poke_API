@@ -4,7 +4,7 @@ const gallery$$ = document.querySelector(".gallery");
 const getPokemons = async () => {
   //Crear pokemons
   if (pokemons.length === 0) {
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 1; i <= 500; i++) {
       const baseDatos = `https://pokeapi.co/api/v2/pokemon/${i}`;
       const rawPokemons = await fetch(baseDatos);
       const formattedPokemons = await rawPokemons.json();
@@ -15,10 +15,10 @@ const getPokemons = async () => {
 };
 
 const printPokemons = (pokemons) => {
-  //funcion para pintar los pokemonsç
+  //funcion para pintar los pokemons
   gallery$$.innerHTML = '';
   for (let pokemon of pokemons) {
-    if(pokemon.name.toLowerCase().includes(input$$.value.toLowerCase())){
+    if(pokemon.name.toLowerCase().includes(input$$.value.toLowerCase()) ||  pokemon.types[0].type.name.toLowerCase().includes(input$$.value.toLowerCase())){
     const figure$$ = document.createElement("figure");
     const titulo$$ = document.createElement("h2");
     const image$$ = document.createElement("img");
@@ -99,3 +99,4 @@ console.log(input$$.value);
 
 
 getPokemons();
+
