@@ -4,7 +4,7 @@ const gallery$$ = document.querySelector(".gallery");
 const getPokemons = async () => {
   //Crear pokemons
   if (pokemons.length === 0) {
-    for (let i = 1; i <= 500; i++) {
+    for (let i = 1; i <= 151; i++) {
       const baseDatos = `https://pokeapi.co/api/v2/pokemon/${i}`;
       const rawPokemons = await fetch(baseDatos);
       const formattedPokemons = await rawPokemons.json();
