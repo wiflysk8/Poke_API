@@ -81,6 +81,23 @@ input {
 }
 
 .gallery figure {
+  background-image: url(./assets/normal.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 7px 7px 20px black;
+          box-shadow: 7px 7px 20px black;
   cursor: pointer;
 }
 
@@ -107,6 +124,11 @@ input {
 .gallery figure img {
   width: 130px;
   height: 120px;
+}
+
+.gallery img:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .gallery span {
