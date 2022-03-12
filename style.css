@@ -122,13 +122,20 @@ input {
 }
 
 .gallery figure img {
+  position: relative;
   width: 130px;
   height: 120px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 
 .gallery img:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: saturate(180%);
+          filter: saturate(180%);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 .gallery span {
