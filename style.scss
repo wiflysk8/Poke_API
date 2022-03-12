@@ -93,13 +93,18 @@ input{
 	}		
 		
 		figure img{
-
+			position: relative;
 			width: 130px;
 			height: 120px;
+			transition: all 400ms;
+			filter: grayscale(30%);
 			
 		}	
 
-		img:hover {filter: grayscale(80%);}	
+		img:hover {
+			filter: saturate(180%);
+			transform:scale(1.35);			
+		}	
 
 		span {
 			font-family: 'Courier New', Courier, monospace;
@@ -159,7 +164,6 @@ input{
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 7px 7px 20px black;
-	
 }
 
 .bug{
