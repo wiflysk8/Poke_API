@@ -1,381 +1,363 @@
 @font-face {
-  font-family: "Pokemon";
-  src: url(./assets/fonts/PokemonHollow.ttf);
-  font-weight: solid;
+	font-family: "Pokemon";
+	src: url(./assets/fonts/PokemonHollow.ttf);
+	font-weight: solid;
 }
 
-@font-face {
-  font-family: "pokemonSolid";
-  src: url(./assets/fonts/PokemonSolid.ttf);
-  font-weight: solid;
+@font-face {font-family: "pokemonSolid";
+	src: url(./assets/fonts/PokemonSolid.ttf);
+	font-weight: solid;
 }
 
-body {
-  font-family: 'Times New Roman', Times, serif;
-  border: 0px;
-  margin: 0px;
-  height: 100vh;
-  background-color: rgba(170, 219, 238, 0.808);
-  background-image: url(./assets/gradient2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+body{	
+	font-family: 'Times New Roman', Times, serif;
+	border: 0px;
+	margin: 0px;
+	height: 100vh;
+	background-color: rgba(170, 219, 238, 0.808);
+	background-image: url(./assets/gradient2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed
 }
 
-a {
-  text-decoration: none;
-  color: black;
+a{
+	text-decoration: none;
+	color: black;
 }
 
-.b-logo {
-  width: 600px;
-  height: 300px;
+.b-logo{
+	width: 600px;
+	height: 300px;
 }
 
-.b-pokeball {
-  position: relative;
-  right: 20%;
-  width: 120px;
-  height: 60px;
+.b-pokeball{
+	
+	position: relative;
+	right: 20%;
+	width: 120px;
+	height: 60px;
+	
 }
 
-h1 {
-  font-family: "Pokemon";
-  font-size: 100px;
-  margin-top: 30px;
+h1{
+	font-family: "Pokemon";
+	font-size: 100px;
+	margin-top: 0px;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	
 }
 
-.b-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 40px;
-  padding-left: 52%;
+.b-header{
+	display: flex;
+	align-items: center;	
+	width: 50px;
+	height: 40px;
+	padding-left: 52%;
+	margin-top: -100px;
 }
 
-input {
-  height: 20px;
-  width: 160px;
-  font-size: 18px;
-  margin-left: 100%;
+input{	
+	height: 20px;	
+	width: 160px;
+	font-size: 18px;
+	margin-left: 100%;
 }
 
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 20px;
-  max-width: 80%;
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	margin-top: 10px;
+	max-width: 80%;
+		
+		
+		
+
+		span {
+			font-family: 'Courier New', Courier, monospace;
+			text-transform: capitalize;
+			font-weight: bold;
+			font-size: 18px;
+			margin: 5px;
+		}
+
+		h2{
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 0px;
+			padding-right: 30px;		
+			
+		}
+
+	.b-card {
+		//background-image: url(./assets/normal.png);
+		background-repeat: no-repeat;
+		background-size: 200px;
+		width: 200px;
+		height: 280px;		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 7px 7px 20px black;
+		cursor: pointer;
+		div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100px;
+			width: 100%;
+			padding: bot;
+			background-color: transparent;			
+		}
+
+		img{
+			position: relative;
+			width: 130px;
+			height: 120px;
+			transition: all 400ms;
+			filter: grayscale(30%);
+			
+		}	
+
+		img:hover {
+			filter: saturate(180%);
+			transform:scale(1.35);	
+		}	
+
+		
+		
+		&__grass{
+			background-image: url(./assets/grass1.png);
+		}
+	 
+		&__fire {
+			background-image: url(./assets/fire.png);
+			color: rgb(239, 250, 253);
+		
+			
+		}		
+		
+		&__water{
+			background-image: url(./assets/water.png);
+		
+				
+		}
+		
+		
+		&__bug{
+			background-image: url(./assets/bug.png);
+		
+		}
+		
+		&__ground{
+			background-image: url(./assets/bug.png);
+			
+		}
+		
+		&__poison {
+			background-image: url(./assets/poison.png);
+			
+		}
+		
+		&__electric {
+			background-image: url(./assets/electric.png);
+			
+		}
+		
+		&__normal {
+			background-image: url(./assets/normal.png);
+			
+		}
+		
+		&__fighting {
+			background-image: url(./assets/fight.png);
+		
+		}
+		
+		&__fairy {
+			background-image: url(./assets/fairy.png);
+		
+		}
+		
+		&__psychic {
+			background-image: url(./assets/psychic.png);
+		
+		}
+		
+		&__rock{
+			background-image: url(./assets/rock.png);
+		
+		}
+		
+		&__rock{
+			background-image: url(./assets/ground.png);
+		}
+		
+		&__ghost {
+			background-image: url(./assets/ghost1.png);
+			
+		}
+		
+		&__ice {
+			background-image: url(./assets/ice.png);
+			
+		}
+		
+		&__dragon {
+			background-image: url(./assets/dragon.png);
+		
+		}
+
+	}	
+
 }
 
-.gallery span {
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 5px;
-}
 
-.gallery h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  padding-right: 30px;
-}
 
-.gallery .b-card {
-  background-repeat: no-repeat;
-  background-size: 200px;
-  width: 200px;
-  height: 280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 7px 7px 20px black;
-          box-shadow: 7px 7px 20px black;
-  cursor: pointer;
-}
 
-.gallery .b-card div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100px;
-  width: 100%;
-  padding: bot;
-  background-color: transparent;
-}
-
-.gallery .b-card img {
-  position: relative;
-  width: 130px;
-  height: 120px;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
-}
-
-.gallery .b-card img:hover {
-  -webkit-filter: saturate(180%);
-          filter: saturate(180%);
-  -webkit-transform: scale(1.35);
-          transform: scale(1.35);
-}
-
-.gallery .b-card__grass {
-  background-image: url(./assets/grass1.png);
-}
-
-.gallery .b-card__fire {
-  background-image: url(./assets/fire.png);
-  color: #effafd;
-}
-
-.gallery .b-card__water {
-  background-image: url(./assets/water.png);
-}
-
-.gallery .b-card__bug {
-  background-image: url(./assets/bug.png);
-}
-
-.gallery .b-card__ground {
-  background-image: url(./assets/bug.png);
-}
-
-.gallery .b-card__poison {
-  background-image: url(./assets/poison.png);
-}
-
-.gallery .b-card__electric {
-  background-image: url(./assets/electric.png);
-}
-
-.gallery .b-card__normal {
-  background-image: url(./assets/normal.png);
-}
-
-.gallery .b-card__fighting {
-  background-image: url(./assets/fight.png);
-}
-
-.gallery .b-card__fairy {
-  background-image: url(./assets/fairy.png);
-}
-
-.gallery .b-card__psychic {
-  background-image: url(./assets/psychic.png);
-}
-
-.gallery .b-card__rock {
-  background-image: url(./assets/rock.png);
-}
-
-.gallery .b-card__rock {
-  background-image: url(./assets/ground.png);
-}
-
-.gallery .b-card__ghost {
-  background-image: url(./assets/ghost1.png);
-}
-
-.gallery .b-card__ice {
-  background-image: url(./assets/ice.png);
-}
-
-.gallery .b-card__dragon {
-  background-image: url(./assets/dragon.png);
-}
-
-.b-btn-back {
-  cursor: pointer;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  margin-top: 23px;
-  margin-left: 115px;
-  width: 137px;
-  height: 36px;
-  background-image: url(./assets/gradient2.png);
-  opacity: 0.8;
+.b-btn-back {	
+	cursor: pointer;	
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	margin-top: 23px;
+    margin-left: 115px;
+    width: 137px;
+    height: 36px;
+	background-image: url(./assets/gradient2.png);
+	opacity: 0.8;
+	
 }
 
 .b-card-detail {
-  margin-top: 0px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 300px;
-  height: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 7px 7px 20px black;
-          box-shadow: 7px 7px 20px black;
-  cursor: pointer;
-}
+		//background-image: url(./assets/normal.png);
+		margin-top: 0px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 300px;
+		height: 420px;		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 7px 7px 20px black;
+		cursor: pointer;
+		div{
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 103px;
+			width: 100%;
+			background-color: transparent;			
+		}
 
-.b-card-detail div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 103px;
-  width: 100%;
-  background-color: transparent;
-}
+		span{
+			font-size: 22px;
+			margin: 0px;
+		}
 
-.b-card-detail span {
-  font-size: 22px;
-  margin: 0px;
-}
+		img{
+			transition: all 400ms;
+		filter: grayscale(30%);
+		margin-top: -55px;
+		height: 173px;
+		margin-bottom: 13px;
+			
+		}	
 
-.b-card-detail img {
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
-  margin-top: -55px;
-  height: 173px;
-  margin-bottom: 13px;
-}
+		img:hover {
+			filter: saturate(200%);
+			transform:scale(1.15);	
+		}	
 
-.b-card-detail img:hover {
-  -webkit-filter: saturate(200%);
-          filter: saturate(200%);
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
+		h2{
+			font-family: "pokemon";
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: -3px;
+			padding-right: 30px;	
+			
+		}
+		
+		&__grass{
+			background-image: url(./assets/grass1.png);
+		}
+	 
+		&__fire {
+			background-image: url(./assets/fire.png);
+			color: rgb(239, 250, 253);	
+		}		
+		
+		&__water{
+			background-image: url(./assets/water.png);	
+		}
+		
+		
+		&__bug{
+			background-image: url(./assets/bug.png);		
+		}
+		
+		&__ground{
+			background-image: url(./assets/bug.png);			
+		}
+		
+		&__poison {
+			background-image: url(./assets/poison.png);			
+		}
+		
+		&__electric {
+			background-image: url(./assets/electric.png);			
+		}
+		
+		&__normal {
+			background-image: url(./assets/normal.png);			
+		}
+		
+		&__fighting {
+			background-image: url(./assets/fight.png);		
+		}
+		
+		&__fairy {
+			background-image: url(./assets/fairy.png);		
+		}
+		
+		&__psychic {
+			background-image: url(./assets/psychic.png);		
+		}
+		
+		&__rock{
+			background-image: url(./assets/rock.png);		
+		}
+		
+		&__rock{
+			background-image: url(./assets/ground.png);
+		}
+		
+		&__ghost {
+			background-image: url(./assets/ghost1.png);			
+		}
+		
+		&__ice {
+			background-image: url(./assets/ice.png);			
+		}
+		
+		&__dragon {
+			background-image: url(./assets/dragon.png);		
+		}
 
-.b-card-detail h2 {
-  font-family: "pokemon";
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: -3px;
-  padding-right: 30px;
-}
+	}	
 
-.b-card-detail__grass {
-  background-image: url(./assets/grass1.png);
-}
-
-.b-card-detail__fire {
-  background-image: url(./assets/fire.png);
-  color: #effafd;
-}
-
-.b-card-detail__water {
-  background-image: url(./assets/water.png);
-}
-
-.b-card-detail__bug {
-  background-image: url(./assets/bug.png);
-}
-
-.b-card-detail__ground {
-  background-image: url(./assets/bug.png);
-}
-
-.b-card-detail__poison {
-  background-image: url(./assets/poison.png);
-}
-
-.b-card-detail__electric {
-  background-image: url(./assets/electric.png);
-}
-
-.b-card-detail__normal {
-  background-image: url(./assets/normal.png);
-}
-
-.b-card-detail__fighting {
-  background-image: url(./assets/fight.png);
-}
-
-.b-card-detail__fairy {
-  background-image: url(./assets/fairy.png);
-}
-
-.b-card-detail__psychic {
-  background-image: url(./assets/psychic.png);
-}
-
-.b-card-detail__rock {
-  background-image: url(./assets/rock.png);
-}
-
-.b-card-detail__rock {
-  background-image: url(./assets/ground.png);
-}
-
-.b-card-detail__ghost {
-  background-image: url(./assets/ghost1.png);
-}
-
-.b-card-detail__ice {
-  background-image: url(./assets/ice.png);
-}
-
-.b-card-detail__dragon {
-  background-image: url(./assets/dragon.png);
-}
-
-.b-card-title {
-  margin-top: -40px;
-  margin-bottom: 37px;
-}
-/*# sourceMappingURL=style.css.map */
+	.b-card-title{
+		margin-top: -40px;
+    	margin-bottom: 37px;
+	}
