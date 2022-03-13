@@ -16,6 +16,10 @@ body {
   margin: 0px;
   height: 100vh;
   background-color: rgba(170, 219, 238, 0.808);
+  background-image: url(./assets/gradient2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
