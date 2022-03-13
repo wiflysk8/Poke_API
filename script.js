@@ -117,13 +117,18 @@ const pokemonDetail = (pokemon) => {
   const type$$ = document.createElement("span");
   const height$$ = document.createElement("span");
   const weight$$ = document.createElement("span");
+  const move$$ = document.createElement("span");
+  const baseXP$$ = document.createElement("span");
+ 
   
 
   titulo$$.textContent = pokemon.name.toUpperCase();
   image$$.src = pokemon.sprites.other.dream_world.front_default;
   type$$.textContent = "Type: " + pokemon.types[0].type.name;
-  height$$.textContent = "Height: " + pokemon.height * 10 + "cm";
-  weight$$.textContent = "Weight: " + pokemon.weight / 10 + "kg";
+  height$$.textContent = "Ability: " + pokemon.abilities[0].ability.name;
+  weight$$.textContent = "Move: " + pokemon.moves[0].move.name;
+  move$$.textContent = "Move 1: " + pokemon.moves[1].move.name;
+  baseXP$$.textContent = "Base XP: " + pokemon.base_experience;
 
   h2Div$$.appendChild(titulo$$);
   figure$$.appendChild(h2Div$$);
@@ -131,6 +136,8 @@ const pokemonDetail = (pokemon) => {
   stats$$.appendChild(type$$);
   stats$$.appendChild(height$$);
   stats$$.appendChild(weight$$);
+  stats$$.append(move$$);
+  stats$$.appendChild(baseXP$$);
   figure$$.appendChild(stats$$);
   
   const backBtn$$ = document.createElement('button');
