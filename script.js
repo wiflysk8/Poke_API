@@ -94,7 +94,7 @@ const printPokemons = (pokemons) => {
       figure$$.appendChild(stats$$);
       gallery$$.appendChild(figure$$);
 
-      image$$.addEventListener("click", () => pokemonDetail(pokemon));
+      figure$$.addEventListener("click", () => pokemonDetail(pokemon));
     }
   }
   console.log(input$$.value);
