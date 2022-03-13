@@ -233,12 +233,17 @@ input {
   font-family: 'Courier New', Courier, monospace;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 16px;
   margin-top: 22px;
   margin-left: 115px;
   width: 137px;
   height: 36px;
   background-image: url(./assets/gradient2.png);
   opacity: 0.9;
+}
+
+button:hover {
+  color: #ff7b00;
 }
 
 .b-card-detail {
@@ -288,8 +293,8 @@ input {
 }
 
 .b-card-detail img {
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
+  -webkit-transition: 800ms;
+  transition: 800ms;
   -webkit-filter: grayscale(30%);
           filter: grayscale(30%);
   margin-top: -55px;
@@ -300,8 +305,8 @@ input {
 .b-card-detail img:hover {
   -webkit-filter: saturate(200%);
           filter: saturate(200%);
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 .b-card-detail h2 {
